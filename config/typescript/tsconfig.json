@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "baseUrl": "../..",
+    "target": "ESNext",
+    "module": "ESNext",
+    "useDefineForClassFields": true,
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "types": ["vitest/globals"],
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "verbatimModuleSyntax": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true
+  },
+  "include": [
+    "../../src/**/*",
+    "../**/*",
+    "../build/scripts/**/*",
+    "../../types/**/*",
+    "../storybook/**/*",
+    "../test/matchers.d.ts",
+    "../tests/specs/**/*"
+  ],
+  "exclude": [
+    "boilerplate-example",
+    "../tooling/**/*"
+  ]
+}
